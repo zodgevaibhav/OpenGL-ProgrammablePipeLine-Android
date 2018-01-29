@@ -1,13 +1,15 @@
 package com.astromedicomp.eventhandling;
 
-import android.content.Context; // for drawing context related
-import android.graphics.Color; // for "Color" class
-import android.widget.TextView; // for "TextView" class
-import android.view.MotionEvent; // for "MotionEvent"
-import android.view.GestureDetector; // for GestureDetector
-import android.view.GestureDetector.OnGestureListener; // for OnGestureListener
-import android.view.GestureDetector.OnDoubleTapListener; // OnDoubleTapListener
+
+import android.widget.TextView;
+import android.content.Context;
 import android.view.Gravity;
+import android.graphics.Color;
+import android.view.MotionEvent;
+import android.view.GestureDetector;
+import android.view.GestureDetector.OnGestureListener;
+import android.view.GestureDetector.OnDoubleTapListener;
+
 
 public class MyView extends TextView implements OnGestureListener, OnDoubleTapListener
 {
@@ -18,61 +20,53 @@ public class MyView extends TextView implements OnGestureListener, OnDoubleTapLi
         super(context);
         
         setTextColor(Color.rgb(255,128,0));
-        setText("Hello World !!!");
+        
+		setText("Hello World !!!");
 		
 		setTextSize(60);
 		
 		setGravity(Gravity.CENTER);
         
-        gestureDetector = new GestureDetector(context, this, null, false); // this means 'handler' i.e. who is going to handle
-        gestureDetector.setOnDoubleTapListener(this); // this means 'handler' i.e. who is going to handle
+        gestureDetector = new GestureDetector(context, this, null, false);
+        gestureDetector.setOnDoubleTapListener(this);
     }
     
-    // Handling 'onTouchEvent' Is The Most IMPORTANT,
-    // Because It Triggers All Gesture And Tap Events
-    @Override
+	@Override
     public boolean onTouchEvent(MotionEvent event)
     {
-        // code
         int eventaction = event.getAction();
         if(!gestureDetector.onTouchEvent(event))
             super.onTouchEvent(event);
         return(true);
     }
     
-    // abstract method from OnDoubleTapListener so must be implemented
+    
     @Override
     public boolean onDoubleTap(MotionEvent e)
     {
-        setText("Double Tap");
+        setText("Double Tap...");
         return(true);
     }
     
-    // abstract method from OnDoubleTapListener so must be implemented
     @Override
     public boolean onDoubleTapEvent(MotionEvent e)
     {
-        // Do Not Write Any code Here Because Already Written 'onDoubleTap'
         return(true);
     }
     
-    // abstract method from OnDoubleTapListener so must be implemented
-    @Override
+	@Override
     public boolean onSingleTapConfirmed(MotionEvent e)
     {
-        setText("Single Tap");
+        setText("Single Tap...");
         return(true);
     }
     
-    // abstract method from OnGestureListener so must be implemented
-    @Override
+	@Override
     public boolean onDown(MotionEvent e)
     {
-        // Do Not Write Any code Here Because Already Written 'onSingleTapConfirmed'
         return(true);
     }
     
-    // abstract method from OnGestureListener so must be implemented
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY)
     {
@@ -80,28 +74,22 @@ public class MyView extends TextView implements OnGestureListener, OnDoubleTapLi
         return(true);
     }
     
-    // abstract method from OnGestureListener so must be implemented
     @Override
     public void onLongPress(MotionEvent e)
     {
-        setText("Long Press");
+        setText("Long Press...");
     }
-    
-    // abstract method from OnGestureListener so must be implemented
     @Override
     public boolean onScroll(MotionEvent e1, MotionEvent e2, float distanceX, float distanceY)
     {
-        setText("Scroll");
+        setText("Scrolled...");
         return(true);
     }
     
-    // abstract method from OnGestureListener so must be implemented
     @Override
     public void onShowPress(MotionEvent e)
     {
     }
-    
-    // abstract method from OnGestureListener so must be implemented
     @Override
     public boolean onSingleTapUp(MotionEvent e)
     {
