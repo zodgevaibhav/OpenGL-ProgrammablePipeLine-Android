@@ -28,8 +28,10 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
 	private int shaderProgramObject;
 
 	private int[] vao = new int[1];
-	private int[] vbo_position = new int[1];
+	private int[] vbo = new int[1];
+	
 	private int[] vbo_color = new int[1];
+	
 	private int mvpUniform;
 
 	private float perspectiveProjectionMatrix[] = new float[16]; // 4x4 matrix of orthogrpahic projection make it 0
@@ -176,12 +178,11 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
          "#version 320 es"+
          "\n"+
          "precision highp float;"+
-		 "in vec4 vPosition;"+
 		 "in vec4 outColor;"+
          "out vec4 FragColor;"+
          "void main(void)"+
          "{"+
-         "FragColor = vec4(1.0,1.0,1.0,1.0);"+//outColor;"+
+         "FragColor = outColor;"+//vec4(1.0, 1.0, 1.0, 1.0);"+
          "}"
         );
         GLES32.glShaderSource(fragmentShaderObject,fragmentShaderSourceCode);
@@ -206,10 +207,10 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
         shaderProgramObject=GLES32.glCreateProgram();
         
         GLES32.glAttachShader(shaderProgramObject,vertexShaderObject);
-        
         GLES32.glAttachShader(shaderProgramObject,fragmentShaderObject);
         
         GLES32.glBindAttribLocation(shaderProgramObject,GLESMacros.VVZ_ATTRIB_VERTEX,"vPosition");
+		GLES32.glBindAttribLocation(shaderProgramObject,GLESMacros.VVZ_ATTRIB_COLOR,"vColor");
         
         GLES32.glLinkProgram(shaderProgramObject);
         int[] iShaderProgramLinkStatus = new int[1];
@@ -240,8 +241,8 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
         GLES32.glGenVertexArrays(1,vao,0);
         GLES32.glBindVertexArray(vao[0]);
 
-        GLES32.glGenBuffers(1,vbo_position,0);
-        GLES32.glBindBuffer(GLES32.GL_ARRAY_BUFFER,vbo_position[0]);
+        GLES32.glGenBuffers(1,vbo,0);
+        GLES32.glBindBuffer(GLES32.GL_ARRAY_BUFFER,vbo[0]);
         
         ByteBuffer byteBuffer=ByteBuffer.allocateDirect(triangleVertices.length * 4);
         byteBuffer.order(ByteOrder.nativeOrder());
@@ -260,34 +261,28 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
                                      false,0,0);
         
         GLES32.glEnableVertexAttribArray(GLESMacros.VVZ_ATTRIB_VERTEX);
-		
-//*************************** Clean arrays ***********************************		
-GLES32.glBindBuffer(GLES32.GL_ARRAY_BUFFER,0);
-        GLES32.glBindVertexArray(0);
-		
-		
-final float colorVertices[]= new float[]
+//**************************************** Color vertices **************************************
+
+        final float colorVertices[]= new float[]
         {
             1.0f, 0.0f,0.0f,
             0.0f,1.0f,0.0f, 
             0.0f,0.0f,1.0f 
         };
 
-        GLES32.glGenVertexArrays(1,vao,0);
-        GLES32.glBindVertexArray(vao[0]);
-
+     
         GLES32.glGenBuffers(1,vbo_color,0);
         GLES32.glBindBuffer(GLES32.GL_ARRAY_BUFFER,vbo_color[0]);
         
-        ByteBuffer colorByteBuffer=ByteBuffer.allocateDirect(colorVertices.length * 4);
-        colorByteBuffer.order(ByteOrder.nativeOrder());
-        FloatBuffer colorBuffer=colorByteBuffer.asFloatBuffer();
-        colorBuffer.put(colorVertices);
-        colorBuffer.position(0);
+			byteBuffer=ByteBuffer.allocateDirect(colorVertices.length * 4);
+        byteBuffer.order(ByteOrder.nativeOrder());
+			verticesBuffer=byteBuffer.asFloatBuffer();
+        verticesBuffer.put(colorVertices);
+        verticesBuffer.position(0);
         
         GLES32.glBufferData(GLES32.GL_ARRAY_BUFFER,
                             colorVertices.length * 4,
-                            colorBuffer,
+                            verticesBuffer,
                             GLES32.GL_STATIC_DRAW);
         
         GLES32.glVertexAttribPointer(GLESMacros.VVZ_ATTRIB_COLOR,
@@ -295,12 +290,12 @@ final float colorVertices[]= new float[]
                                      GLES32.GL_FLOAT,
                                      false,0,0);
         
-        GLES32.glEnableVertexAttribArray(GLESMacros.VVZ_ATTRIB_COLOR);		
+        GLES32.glEnableVertexAttribArray(GLESMacros.VVZ_ATTRIB_COLOR);
 
-//*************************** Clean arrays ***********************************        
+
+        
         GLES32.glBindBuffer(GLES32.GL_ARRAY_BUFFER,0);
         GLES32.glBindVertexArray(0);
-//*************************** Clean arrays ***********************************
 
         GLES32.glEnable(GLES32.GL_DEPTH_TEST);
 
@@ -356,18 +351,12 @@ final float colorVertices[]= new float[]
             vao[0]=0;
         }
         
-        if(vbo_position[0] != 0)
+        if(vbo[0] != 0)
         {
-            GLES32.glDeleteBuffers(1, vbo_position, 0);
-            vbo_position[0]=0;
+            GLES32.glDeleteBuffers(1, vbo, 0);
+            vbo[0]=0;
         }
 
-        if(vbo_color[0] != 0)
-        {
-            GLES32.glDeleteBuffers(1, vbo_color, 0);
-            vbo_color[0]=0;
-        }
-		
         if(shaderProgramObject != 0)
         {
             if(vertexShaderObject != 0)
