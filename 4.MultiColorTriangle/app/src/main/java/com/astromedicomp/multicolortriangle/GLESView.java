@@ -324,7 +324,7 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
         float modelViewProjectionMatrix[]=new float[16];
         
         Matrix.setIdentityM(modelViewMatrix,0);
-        Matrix.translateM(modelViewMatrix,0,(float)0.0f, (float)0.0f, (float)-6.0f);
+        Matrix.translateM(modelViewMatrix,0,(float)0.0f, (float)0.0f, (float)-3.0f);
         
         Matrix.setIdentityM(modelViewProjectionMatrix,0);
         

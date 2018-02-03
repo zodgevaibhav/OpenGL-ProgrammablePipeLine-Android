@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Wed Jan 31 23:17:15 IST 2018
+0.baseType=DIRECTORY
+0.base=E\:\\ALL_GIT_REPO\\OpenGL-ProgrammablePipeLine-Android\\4.MultiColorTriangle\\app\\build\\intermediates\\transforms\\dex\\release\\0
+0.path=classes.dex
+0.set=DEX
+count=1
