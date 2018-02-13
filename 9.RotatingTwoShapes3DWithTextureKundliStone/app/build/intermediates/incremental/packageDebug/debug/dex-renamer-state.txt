@@ -1,0 +1,4 @@
+#Tue Feb 13 15:31:47 IST 2018
+base.0=E\:\\ALL_GIT_REPO\\OpenGL-ProgrammablePipeLine-Android\\9.RotatingTwoShapes3DWithTextureKundliStone\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex

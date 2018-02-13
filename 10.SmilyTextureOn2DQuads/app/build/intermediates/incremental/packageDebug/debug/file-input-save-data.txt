@@ -1,0 +1,7 @@
+#Internal package file, do not edit.
+#Tue Feb 13 17:30:43 IST 2018
+0.baseType=DIRECTORY
+0.base=E\:\\ALL_GIT_REPO\\OpenGL-ProgrammablePipeLine-Android\\10.SmilyTextureOn2DQuads\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+0.path=classes.dex
+0.set=DEX
+count=1

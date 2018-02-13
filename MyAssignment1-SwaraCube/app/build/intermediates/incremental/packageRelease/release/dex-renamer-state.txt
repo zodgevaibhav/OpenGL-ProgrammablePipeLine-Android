@@ -1,0 +1,4 @@
+#Tue Feb 13 15:37:23 IST 2018
+base.0=E\:\\ALL_GIT_REPO\\OpenGL-ProgrammablePipeLine-Android\\MyAssignment1-SwaraCube\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex
