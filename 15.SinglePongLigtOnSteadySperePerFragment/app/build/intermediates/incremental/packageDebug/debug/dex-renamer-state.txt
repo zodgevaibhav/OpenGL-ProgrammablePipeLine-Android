@@ -1,0 +1,4 @@
+#Tue Mar 27 23:35:33 IST 2018
+base.0=E\:\\ALL_GIT_REPO\\OpenGL-ProgrammablePipeLine-Android\\15.SinglePongLigtOnSteadySperePerFragment\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
