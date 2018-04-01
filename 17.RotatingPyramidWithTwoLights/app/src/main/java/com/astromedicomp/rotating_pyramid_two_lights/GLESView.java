@@ -167,11 +167,13 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
 					 "uniform mat4 u_model_view_matrix;"+
 					 "uniform mat4 u_projection_matrix;"+
 					 "uniform mediump int u_double_tap;"+
-					 "uniform vec3 u_Ld;"+
-					 "uniform vec3 u_Ld_r;"+
+					 "uniform vec3 u_Ld_red;"+
+					 "uniform vec3 u_Ld_green;"+
+					 "uniform vec3 u_Ld_blue;"+
 					 "uniform vec3 u_Kd;"+
-					 "uniform vec4 u_light_position;"+
-					 "uniform vec4 u_light_position_right;"+
+					 "uniform vec4 u_light_position_red;"+
+					 "uniform vec4 u_light_position_blue;"+
+					 "uniform vec4 u_light_position_green;"+
 					 "out vec3 diffuse_light;"+
 					 "void main(void)"+
 					 "{"+
@@ -179,11 +181,14 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
 					 "{"+
 					 "vec4 eyeCoordinates = u_model_view_matrix * vPosition;"+
 					 "vec3 tnorm = normalize(mat3(u_model_view_matrix) * vNormal);"+
-					 "vec3 s = normalize(vec3(u_light_position - eyeCoordinates));"+
-					 "diffuse_light = u_Ld * u_Kd * max(dot(s, tnorm), 0.0);"+
+					 "vec3 s = normalize(vec3(u_light_position_red- eyeCoordinates));"+
+					 "diffuse_light = u_Ld_red * u_Kd * max(dot(s, tnorm), 0.0);"+
 					 
-					 "s = normalize(vec3(u_light_position_right - eyeCoordinates));"+
-					 "diffuse_light =diffuse_light + u_Ld_r * u_Kd * max(dot(s, tnorm), 0.0);"+
+					 "s = normalize(vec3(u_light_position_green - eyeCoordinates));"+
+					 "diffuse_light =diffuse_light + u_Ld_green * u_Kd * max(dot(s, tnorm), 0.0);"+
+					 
+					 "s = normalize(vec3(u_light_position_blue - eyeCoordinates));"+
+					 "diffuse_light =diffuse_light + u_Ld_blue * u_Kd * max(dot(s, tnorm), 0.0);"+
 					 
 					 "}"+
 					 "gl_Position = u_projection_matrix * u_model_view_matrix * vPosition;"+

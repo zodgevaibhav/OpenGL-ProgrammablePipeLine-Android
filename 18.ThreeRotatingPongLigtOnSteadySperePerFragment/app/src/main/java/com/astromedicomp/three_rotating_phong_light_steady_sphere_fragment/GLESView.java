@@ -64,7 +64,7 @@ private int[] vao_sphere = new int[1];
 	private float angleRotateGreen=90.0f;
 	private float angleRotateBlue=180.0f;
 	
-	private int singleTap;
+	private int singleTap=0;
 	private int doubleTap;
 	private int doubleTapUniform;
 
@@ -114,6 +114,21 @@ private int[] vao_sphere = new int[1];
 
 	@Override
 	public boolean onSingleTapConfirmed(MotionEvent e) {
+	
+	if(singleTap==0)
+	{
+		singleTap=1;
+		angleRotateRed=0.0f;
+		angleRotateGreen=0.0f;
+		angleRotateBlue=0.0f;
+	}else if(singleTap==1)
+	{
+		angleRotateRed=0.0f;
+		angleRotateGreen=90.0f;
+		angleRotateBlue=180.0f;
+		singleTap =0;
+	}
+	
 		System.out.println("VVZ: Single tap...");	
 	    return(true);
 	}

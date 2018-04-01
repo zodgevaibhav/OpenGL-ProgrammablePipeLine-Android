@@ -1,0 +1,4 @@
+#Sat Mar 03 18:57:58 IST 2018
+base.0=E\:\\ALL_GIT_REPO\\OpenGL-ProgrammablePipeLine-Android\\12.ProceduralTextureOn2DQuadsCheckerBoard\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex
