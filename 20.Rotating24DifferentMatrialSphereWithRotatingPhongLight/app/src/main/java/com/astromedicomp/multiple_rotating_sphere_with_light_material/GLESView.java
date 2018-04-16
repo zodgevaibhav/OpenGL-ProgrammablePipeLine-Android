@@ -64,107 +64,107 @@ private float  s4_shininess = 0.088f*128.0f ;
 private float  s5_ambient_material[] = { 0.1745f, 0.01175f, 0.01175f,1.0f };
 private float  s5_difuse_material[] = { 0.61424f, 0.04136f, 0.04136f,1.0f };
 private float  s5_specular_material[] = { 0.727811f, 0.626959f, 0.626959f,1.0f };
-private float  s5_shininess[] = { 0.6f *128.0f };
+private float  s5_shininess = 0.6f *128.0f ;
 
 private float  s6_ambient_material[] = { 0.1f, 0.18725f, 0.1745f,1.0f };
 private float  s6_difuse_material[] = { 0.396f, 0.74151f, 0.69102f,1.0f };
 private float  s6_specular_material[] = { 0.297254f, 0.30829f, 0.306678f,1.0f };
-private float  s6_shininess[] = { 0.1f *128.0f };
+private float  s6_shininess = 0.1f *128.0f ;
 
 private float  s7_ambient_material[] = { 0.329412f, 0.223529f, 0.027451f,1.0f };
 private float  s7_difuse_material[] = { 0.780392f, 0.568627f, 0.113725f,1.0f };
 private float  s7_specular_material[] = { 0.992157f, 0.941176f, 0.807843f,1.0f };
-private float  s7_shininess[] = { 0.21794872f *128.0f };
+private float  s7_shininess = 0.21794872f *128.0f;
 
 private float  s8_ambient_material[] = { 0.2125f, 0.1275f, 0.054f,1.0f };
 private float  s8_difuse_material[] = { 0.714f, 0.4284f, 0.18144f,1.0f };
 private float  s8_specular_material[] = { 0.393548f, 0.271906f, 0.166721f,1.0f };
-private float  s8_shininess[] = { 0.2f *128.0f };
+private float  s8_shininess = 0.2f *128.0f ;
 
 private float  s9_ambient_material[] = { 0.25f, 0.25f, 0.25f,1.0f };
 private float  s9_difuse_material[] = { 0.4f, 0.4f, 0.4f,1.0f };
 private float  s9_specular_material[] = { 0.774597f, 0.774597f, 0.774597f,1.0f };
-private float  s9_shininess[] = { 0.6f *128.0f };
+private float  s9_shininess = 0.6f *128.0f ;
 
 private float  s10_ambient_material[] = { 0.19125f, 0.0735f, 0.0225f,1.0f };
 private float  s10_difuse_material[] = { 0.7038f, 0.27048f, 0.0828f,1.0f };
 private float  s10_specular_material[] = { 0.256777f, 0.137622f, 0.086014f,1.0f };
-private float  s10_shininess[] = { 0.1f * 128.0f };
+private float  s10_shininess = 0.1f * 128.0f;
 
 private float  s11_ambient_material[] = { 0.24725f, 0.1995f, 0.0745f,1.0f };
 private float  s11_difuse_material[] = { 0.75164f, 0.60648f, 0.22648f,1.0f };
 private float  s11_specular_material[] = { 0.628281f, 0.555802f, 0.366065f,1.0f };
-private float  s11_shininess[] = { 0.4f * 128.0f };
+private float  s11_shininess = 0.4f * 128.0f;
 
 private float  s12_ambient_material[] = { 0.19225f, 0.19225f, 0.19225f,1.0f };
 private float  s12_difuse_material[] = { 0.50754f, 0.50754f, 0.50754f,1.0f };
 private float  s12_specular_material[] = { 0.508273f, 0.508273f, 0.508273f,1.0f };
-private float  s12_shininess[] = { 0.4f * 128.0f };
+private float  s12_shininess = 0.4f * 128.0f;
 
 private float  s13_ambient_material[] = { 0.0f, 0.0f, 0.0f,1.0f };
 private float  s13_difuse_material[] = { 0.01f, 0.01f, 0.01f,1.0f };
 private float  s13_specular_material[] = { 0.50f, 0.50f, 0.50f,1.0f };
-private float  s13_shininess[] = { 0.25f * 128.0f };
+private float  s13_shininess = 0.25f * 128.0f;
 
 private float  s14_ambient_material[] = { 0.0f, 0.1f, 0.06f,1.0f };
 private float  s14_difuse_material[] = { 0.0f, 0.50980392f, 0.50980392f,1.0f };
 private float  s14_specular_material[] = { 0.50196078f, 0.50196078f, 0.50196078f,1.0f };
-private float  s14_shininess[] = { 0.25f * 128.0f };
+private float  s14_shininess = 0.25f * 128.0f;
 
 private float  s15_ambient_material[] = { 0.0f, 0.0f, 0.0f,1.0f };
 private float  s15_difuse_material[] = { 0.1f, 0.35f, 0.1f,1.0f };
 private float  s15_specular_material[] = { 0.45f, 0.55f, 0.45f,1.0f };
-private float  s15_shininess[] = { 0.25f * 128.0f };
+private float  s15_shininess = 0.25f * 128.0f;
 
 private float  s16_ambient_material[] = { 0.0f, 0.0f, 0.0f,1.0f };
 private float  s16_difuse_material[] = { 0.5f, 0.0f, 0.0f,1.0f };
 private float  s16_specular_material[] = { 0.7f, 0.6f, 0.6f,1.0f };
-private float  s16_shininess[] = { 0.25f * 128.0f };
+private float  s16_shininess = 0.25f * 128.0f;
 
 private float  s17_ambient_material[] = { 0.0f, 0.0f, 0.0f,1.0f };
 private float  s17_difuse_material[] = { 0.55f, 0.55f, 0.55f,1.0f };
 private float  s17_specular_material[] = { 0.70f, 0.70f, 0.70f,1.0f };
-private float  s17_shininess[] = { 0.25f * 128.0f };
+private float  s17_shininess = 0.25f * 128.0f;
 
 private float  s18_ambient_material[] = { 0.0f, 0.0f, 0.0f,1.0f };
 private float  s18_difuse_material[] = { 0.5f, 0.5f, 0.0f,1.0f };
 private float  s18_specular_material[] = { 0.60f, 0.60f, 0.50f,1.0f };
-private float  s18_shininess[] = { 0.25f * 128.0f };
+private float  s18_shininess = 0.25f * 128.0f;
 
 private float  s19_ambient_material[] = { 0.02f, 0.02f, 0.02f,1.0f };
 private float  s19_difuse_material[] = { 0.01f, 0.01f, 0.01f,1.0f };
 private float  s19_specular_material[] = { 0.4f, 0.4f, 0.4f,1.0f };
-private float  s19_shininess[] = { 0.078125f * 128.0f };
+private float  s19_shininess = 0.078125f * 128.0f;
 
 private float  s20_ambient_material[] = { 0.0f, 0.05f, 0.05f,1.0f };
 private float  s20_difuse_material[] = { 0.4f, 0.5f, 0.5f,1.0f };
 private float  s20_specular_material[] = { 0.04f, 0.7f, 0.7f,1.0f };
-private float  s20_shininess[] = { 0.078125f * 128.0f };
+private float  s20_shininess = 0.078125f * 128.0f;
 
 private float  s21_ambient_material[] = { 0.0f, 0.05f, 0.0f,1.0f };
 private float  s21_difuse_material[] = { 0.4f, 0.5f, 0.4f,1.0f };
 private float  s21_specular_material[] = { 0.04f, 0.7f, 0.04f,1.0f };
-private float  s21_shininess[] = { 0.078125f  * 128.0f };
+private float  s21_shininess = 0.078125f  * 128.0f;
 
 private float  s22_ambient_material[] = { 0.05f, 0.0f, 0.0f,1.0f };
 private float  s22_difuse_material[] = { 0.5f, 0.4f, 0.4f,1.0f };
 private float  s22_specular_material[] = { 0.7f, 0.04f, 0.04f,1.0f };
-private float  s22_shininess[] = { 0.078125f * 128.0f };
+private float  s22_shininess = 0.078125f * 128.0f;
 
 private float  s23_ambient_material[] = { 0.05f, 0.05f, 0.05f,1.0f };
 private float  s23_difuse_material[] = { 0.5f, 0.5f, 0.5f,1.0f };
 private float  s23_specular_material[] = { 0.7f, 0.7f, 0.7f,1.0f };
-private float  s23_shininess[] = { 0.078125f * 128.0f };
+private float  s23_shininess = 0.078125f * 128.0f;
 
 private float  s24_ambient_material[] = { 0.05f, 0.05f, 0.0f,1.0f };
 private float  s24_difuse_material[] = { 0.5f, 0.5f, 0.4f,1.0f };
 private float  s24_specular_material[] = { 0.7f, 0.7f, 0.04f,1.0f };
-private float  s24_shininess[] = { 0.078125f  * 128.0f };
+private float  s24_shininess = 0.078125f  * 128.0f;
 
 private float  s25_ambient_material[] = { 0.05f, 0.00f, 0.4f,1.0f };
 private float  s25_difuse_material[] = { 0.4f, 0.5f, 0.4f,1.0f };
 private float  s25_specular_material[] = { 0.7f, 0.7f, 0.07f,1.0f };
-private float  s25_shininess[] = { 0.078125f  * 128.0f };
+private float  s25_shininess = 0.078125f  * 128.0f;
 
 //***********************************************************************************************************
 	
@@ -595,9 +595,9 @@ else
 	//--------------- Light common to all sphere -------- (Tried by giving light to individual spheres as well)
 			GLES32.glUniform3fv(laUniform, 1, light_ambient, 0);
             GLES32.glUniform3fv(lsUniform, 1, light_specular, 0);
-				//light_position[0]=(float)angleRotateRed*50000.0f;  //X Axis rotation
-				//light_position[1]=(float)angleRotateRed*5000.0f;  //X Axis rotation
-				//light_position[2]=(float)angleRotateRed*5000.0f;  //X Axis rotation
+				light_position[0]=(float)Math.sin(angleRotateRed)*100;  //X Axis rotation
+				light_position[1]=0;  //Y Axis rotation
+				light_position[2]=(float)Math.cos(angleRotateRed)*100;  //Z Axis rotation
 			GLES32.glUniform3fv(ldUniform, 1, light_diffuse, 0);
             GLES32.glUniform4fv(lightPositionUniform, 1, light_position, 0);
 		
@@ -611,8 +611,9 @@ else
 			GLES32.glUniform1f(materialShininessUniform, s1_shininess);
 					
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
-		
+		GLES32.glBindVertexArray(0);
 //-----
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(384, 864, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
 		
@@ -622,237 +623,272 @@ else
         GLES32.glUniform1f(materialShininessUniform, s2_shininess);
 		       
 	   GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
+	   		GLES32.glBindVertexArray(0);
 		
 //-----
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(768, 864, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
 		
 		GLES32.glUniform3fv(kaUniform, 1, s3_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s3_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s3_specular_material, 0);
-        GLES32.glUniform1f(materialShininessUniform, s2_shininess);
+        GLES32.glUniform1f(materialShininessUniform, s3_shininess);
 		
         GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+				GLES32.glBindVertexArray(0);
 //-----
+				GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1156, 864, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
 
 		GLES32.glUniform3fv(kaUniform, 1, s4_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s4_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s4_specular_material, 0);
+		GLES32.glUniform1f(materialShininessUniform, s4_shininess);
+
 
         GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+				GLES32.glBindVertexArray(0);
 //-----		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1536, 864, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
 		
 		GLES32.glUniform3fv(kaUniform, 1, s5_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s5_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s5_specular_material, 0);
-       
+        GLES32.glUniform1f(materialShininessUniform, s5_shininess);
+
 
 	   GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+		GLES32.glBindVertexArray(0);
 //*************************** 2 line ******************************************************************************
 
-
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(0, 648, WIN_WIDTH/4, WIN_HEIGHT/4);        
         GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
 		
 		GLES32.glUniform3fv(kaUniform, 1, s25_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s25_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s25_specular_material, 0);		
-        
+        GLES32.glUniform1f(materialShininessUniform, s25_shininess);        
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
-		
+		GLES32.glBindVertexArray(0);		
 //------
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(384, 648, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s6_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s6_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s6_specular_material, 0);
-		
+        GLES32.glUniform1f(materialShininessUniform, s6_shininess);		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
-		
+		GLES32.glBindVertexArray(0);		
 //-------
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(768, 648, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s7_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s7_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s7_specular_material, 0);		
-		
+        GLES32.glUniform1f(materialShininessUniform, s7_shininess);		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+		GLES32.glBindVertexArray(0);
 //-------
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1156, 648, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s8_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s8_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s8_specular_material, 0);
-		
+        GLES32.glUniform1f(materialShininessUniform, s8_shininess);		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+		GLES32.glBindVertexArray(0);
 //-------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1536, 648, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s9_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s9_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s9_specular_material, 0);		
-		
+        GLES32.glUniform1f(materialShininessUniform, s9_shininess);		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+		GLES32.glBindVertexArray(0);
 //*************************** 3 line ******************************************************************************
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(0, 432, WIN_WIDTH/4, WIN_HEIGHT/4);        
         GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
 
 		GLES32.glUniform3fv(kaUniform, 1, s10_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s10_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s10_specular_material, 0);
-		
+        GLES32.glUniform1f(materialShininessUniform, s10_shininess);		
         GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
-		
+		GLES32.glBindVertexArray(0);		
 //--------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(384, 432, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s11_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s11_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s11_specular_material, 0);		
-		
+        GLES32.glUniform1f(materialShininessUniform, s11_shininess);		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
-
+		GLES32.glBindVertexArray(0);
 //-------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(768, 432, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s12_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s12_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s12_specular_material, 0);		
-		
+        GLES32.glUniform1f(materialShininessUniform, s12_shininess);		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+		GLES32.glBindVertexArray(0);
 //-------
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1156, 432, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
 		
 		GLES32.glUniform3fv(kaUniform, 1, s13_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s13_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s13_specular_material, 0);		
-		
+        GLES32.glUniform1f(materialShininessUniform, s13_shininess);		
         GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+		GLES32.glBindVertexArray(0);
 //-------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1536, 432, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s14_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s14_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s14_specular_material, 0);		
-		
+        GLES32.glUniform1f(materialShininessUniform, s14_shininess);		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+		GLES32.glBindVertexArray(0);
 //*************************** 4 line ******************************************************************************
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(0, 216, WIN_WIDTH/4, WIN_HEIGHT/4);        
         GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
 		
 		GLES32.glUniform3fv(kaUniform, 1, s15_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s15_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s15_specular_material, 0);		
-		
+        GLES32.glUniform1f(materialShininessUniform, s15_shininess);		
         GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
-
+		GLES32.glBindVertexArray(0);
 //-----		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(384, 216, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
        
 		GLES32.glUniform3fv(kaUniform, 1, s16_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s16_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s16_specular_material, 0);
-	   
+        GLES32.glUniform1f(materialShininessUniform, s16_shininess);
+		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
-
+		GLES32.glBindVertexArray(0);
 //------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(768, 216, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s17_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s17_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s17_specular_material, 0);		
+        GLES32.glUniform1f(materialShininessUniform, s17_shininess);
 		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
+		GLES32.glBindVertexArray(0);		
 //------
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1156, 216, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s18_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s18_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s18_specular_material, 0);		
+        GLES32.glUniform1f(materialShininessUniform, s18_shininess);
 		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-		
+		GLES32.glBindVertexArray(0);		
 //------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1536, 216, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s19_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s19_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s19_specular_material, 0);		
+        GLES32.glUniform1f(materialShininessUniform, s19_shininess);		
 		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
-//*************************** 5 line ******************************************************************************
+		GLES32.glBindVertexArray(0);
+//*************************** 5 line 
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(0, 0, WIN_WIDTH/4, WIN_HEIGHT/4);        
         GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
 		
 		GLES32.glUniform3fv(kaUniform, 1, s20_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s20_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s20_specular_material, 0);		
+        GLES32.glUniform1f(materialShininessUniform, s20_shininess);
 		
         GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
-		
+		GLES32.glBindVertexArray(0);		
 //-------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(384, 0, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s21_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s21_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s21_specular_material, 0);
-		
+        GLES32.glUniform1f(materialShininessUniform, s21_shininess);		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);
-		
+		GLES32.glBindVertexArray(0);		
 //------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(768, 0, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s22_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s22_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s22_specular_material, 0);		
+        GLES32.glUniform1f(materialShininessUniform, s22_shininess);
 		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-
+		GLES32.glBindVertexArray(0);
 //------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1156, 0, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s23_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s23_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s23_specular_material, 0);		
+        GLES32.glUniform1f(materialShininessUniform, s23_shininess);
 		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
-		
+		GLES32.glBindVertexArray(0);		
 //------		
+		GLES32.glBindVertexArray(vao_sphere[0]);
 		GLES32.glViewport(1536, 0, WIN_WIDTH/4, WIN_HEIGHT/4);        
 		GLES32.glBindBuffer(GLES32.GL_ELEMENT_ARRAY_BUFFER, vbo_sphere_element[0]);
         
 		GLES32.glUniform3fv(kaUniform, 1, s24_ambient_material, 0);
         GLES32.glUniform3fv(kdUniform, 1, s24_difuse_material, 0);
         GLES32.glUniform3fv(ksUniform, 1, s24_specular_material, 0);		
+        GLES32.glUniform1f(materialShininessUniform, s24_shininess);
 		
 		GLES32.glDrawElements(GLES32.GL_TRIANGLES, numElements, GLES32.GL_UNSIGNED_SHORT, 0);		
 		
