@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="E:\ALL_GIT_REPO\OpenGL-ProgrammablePipeLine-Android\3DModelLoadingInAndroid\app\src\main\assets"/><source path="E:\ALL_GIT_REPO\OpenGL-ProgrammablePipeLine-Android\3DModelLoadingInAndroid\app\build\generated\assets\shaders\debug"/></dataSet><dataSet config="debug"><source path="E:\ALL_GIT_REPO\OpenGL-ProgrammablePipeLine-Android\3DModelLoadingInAndroid\app\src\debug\assets"/></dataSet></merger>

@@ -1,0 +1,4 @@
+#Sat Jun 30 14:48:53 IST 2018
+base.0=E\:\\ALL_GIT_REPO\\OpenGL-ProgrammablePipeLine-Android\\3DModelLoadingInAndroid\\app\\build\\intermediates\\transforms\\dex\\release\\0
+path.0=classes.dex
+renamed.0=classes.dex

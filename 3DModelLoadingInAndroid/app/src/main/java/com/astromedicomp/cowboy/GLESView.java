@@ -52,6 +52,8 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
 	float triangleVertices[] = new float[12780];
 	float triangleTexture[] = new float[8520];
 	
+	float zTranslation = -14.0f;
+	
 	
 	private int mvpUniform;
 	private int mvpTextureSamplerUniform;
@@ -105,12 +107,14 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
 	@Override
 	public boolean onSingleTapConfirmed(MotionEvent e) {
 		System.out.println("VVZ: Single tap...");
+		zTranslation = zTranslation +0.5f;
 		return true;
 	}
 
 	@Override
 	public boolean onDoubleTap(MotionEvent e) {
 		System.out.println("VVZ: Double tap...");
+		zTranslation = zTranslation -0.5f;
 		return true;
 	}
 
@@ -390,8 +394,9 @@ public class GLESView extends GLSurfaceView implements GLSurfaceView.Renderer, O
         float modelViewProjectionMatrix[]=new float[16];
 		float rotationMatrix[]=new float[16];
 //**************************** Triangle draw ***********************************************************        
+
         Matrix.setIdentityM(modelViewMatrix,0);
-        Matrix.translateM(modelViewMatrix,0,-(float)0.0f, -(float)4.0f, (float)-12.0f);
+        Matrix.translateM(modelViewMatrix,0,-(float)0.0f, -(float)4.0f, (float)zTranslation);
         
 		Matrix.setIdentityM(rotationMatrix,0);
 		
